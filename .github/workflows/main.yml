@@ -24,6 +24,8 @@ jobs:
     container:
       image: barichello/godot-ci:3.3.3
     steps:
+      - name: Godot Export
+        uses: firebelley/godot-export@v3.0.0
       - name: Checkout
         uses: actions/checkout@v2
         with:
